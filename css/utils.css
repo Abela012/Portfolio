@@ -1,0 +1,99 @@
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary-500);
+}
+
+.text-secondary {
+  color: var(--color-secondary-500);
+}
+
+.text-accent {
+  color: var(--color-accent-500);
+}
+
+.text-success {
+  color: var(--color-success-500);
+}
+
+.text-warning {
+  color: var(--color-warning-500);
+}
+
+.text-error {
+  color: var(--color-error-500);
+}
+
+.bg-primary {
+  background-color: var(--color-primary-500);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary-500);
+}
+
+.bg-accent {
+  background-color: var(--color-accent-500);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive utility classes */
+.hide-on-mobile {
+  display: block;
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  .show-on-mobile {
+    display: block;
+  }
+}

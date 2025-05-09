@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <title>Abel Birhanu | Frontend Developer</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/projects.css">
+  <link rel="stylesheet" href="css/components/about.css">
+  <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="" href="C:\Users\hp\Downloads\project-bolt-sb1-d2jqejys\project\public\me.PNG">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#" class="logo">AB</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle__icon theme-toggle__icon--light">☀️</span>
+        <span class="theme-toggle__icon theme-toggle__icon--dark">🌙</span>
+      </button>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__name">Abel Birhanu</span>
+            <span class="hero__role">Frontend Developer</span>
+          </h1>
+          <p class="hero__tagline">Creating beautiful, responsive, and accessible web experiences.</p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__shape hero__shape--1">
+          </div>
+          <div class="hero__shape hero__shape--2"></div>
+          <div class="hero__shape hero__shape--3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Recent Projects</h2>
+        <p class="section-subtitle">A selection of my favorite works</p>
+        
+        <div class="projects__grid">
+          <!-- Project cards will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>Hi there! I'm a passionate frontend developer with a keen eye for detail and a dedication to creating stunning, user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life with clean, efficient code.</p>
+            <p>I specialize in building responsive websites and applications that work flawlessly across all devices. My approach combines technical expertise with creative problem-solving to deliver solutions that exceed expectations.</p>
+          </div>
+          
+          <div class="about__skills">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill">
+                <span class="skill__name">HTML5 & Semantic HTML</span>
+                <i class="fa-brands fa-html5"></i>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill__name">CSS3 / SCSS / Tailwind</span>
+                <i class="fa-brands fa-css3-alt"></i>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill__name">JavaScript / TypeScript</span>
+                <i class="fa-brands fa-js"></i>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill__name">React / Next.js</span>
+                <i class="fa-brands fa-react"></i>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill__name">UI/UX Design</span>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill__name">Performance Optimization</span>
+                <div class="skill__bar">
+                  <div class="skill__level" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together.</p>
+        
+        <div class="contact__content">
+          <!-- <form id="contact-form" class="contact__form">
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" name="name" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__input form__textarea" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form> -->
+          
+          <div class="contact__info">
+            <div class="contact__item">
+              <h3 class="contact__label">Email</h3>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@johndoe.com" class="contact__value">abilobirhanu78@gmail.com</a>
+            </div>
+            <div  class="contact__item">
+              <h3 class="contact__label">Phone</h3>
+              <i class="fa-solid fa-phone"></i>
+              <h4 class="contact__value">+251967825946</h4>
+            </div>
+            <div class="contact__item">
+              <h3 class="contact__label">Location</h3>
+              <p class="contact__value">Addis Ababa, Ethiopia</p>
+            </div>
+            <div class="contact__social">
+              <a href="https://github.com/Abela012" class="social-link" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/feed/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Abel Birhanu. All rights reserved.</p>
+      <p>Design & Code by Abel Birhanu</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
